@@ -5,3 +5,6 @@
 *.suo
 *.user
 ipch/
+lib/
+Build-win32/
+Build-x64/

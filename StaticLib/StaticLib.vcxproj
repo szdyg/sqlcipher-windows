@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\sqlcipher_crypto.c" />
-    <ClCompile Include="src\sqlcipher_pager.c" />
-    <ClCompile Include="src\sqlite3.c" />
+    <ClInclude Include="defines.h" />
+    <ClInclude Include="sqlcipher_crypto.h" />
+    <ClInclude Include="sqlite3.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\defines.h" />
-    <ClInclude Include="src\sqlcipher_crypto.h" />
-    <ClInclude Include="src\sqlite3.h" />
+    <ClCompile Include="sqlcipher_crypto.c" />
+    <ClCompile Include="sqlcipher_pager.c" />
+    <ClCompile Include="sqlite3.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{769BD811-132C-4C29-92B8-73D4EC9DC9BE}</ProjectGuid>
@@ -78,6 +78,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LibraryPath>$(OpensslDir)32\lib;$(LibraryPath)</LibraryPath>
     <TargetName>sqlcipher32-debug</TargetName>
+    <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)lib</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(OpensslDir)32;$(IncludePath)</IncludePath>
@@ -85,6 +87,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LibraryPath>$(OpensslDir)32\lib;$(LibraryPath)</LibraryPath>
     <TargetName>sqlcipher32</TargetName>
+    <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)lib</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(OpensslDir)64;$(IncludePath)</IncludePath>
@@ -92,6 +96,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LibraryPath>$(OpensslDir)64\lib;$(LibraryPath)</LibraryPath>
     <TargetName>sqlcipher64-debug</TargetName>
+    <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)lib</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(OpensslDir)64;$(IncludePath)</IncludePath>
@@ -99,6 +105,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LibraryPath>$(OpensslDir)64\lib;$(LibraryPath)</LibraryPath>
     <TargetName>sqlcipher64</TargetName>
+    <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)lib</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -109,6 +117,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -124,6 +133,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -141,6 +151,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -160,6 +171,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

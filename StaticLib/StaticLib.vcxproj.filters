@@ -7,25 +7,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\sqlite3.c">
+    <ClInclude Include="defines.h">
       <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sqlcipher_crypto.c">
+    </ClInclude>
+    <ClInclude Include="sqlcipher_crypto.h">
       <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="src\sqlcipher_pager.c">
+    </ClInclude>
+    <ClInclude Include="sqlite3.h">
       <Filter>Source</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\sqlite3.h">
+    <ClCompile Include="sqlcipher_crypto.c">
       <Filter>Source</Filter>
-    </ClInclude>
-    <ClInclude Include="src\sqlcipher_crypto.h">
+    </ClCompile>
+    <ClCompile Include="sqlcipher_pager.c">
       <Filter>Source</Filter>
-    </ClInclude>
-    <ClInclude Include="src\defines.h">
+    </ClCompile>
+    <ClCompile Include="sqlite3.c">
       <Filter>Source</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>
