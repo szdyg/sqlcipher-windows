@@ -4,6 +4,7 @@
 *.sdf
 *.suo
 *.user
+bin/
 ipch/
 lib/
 Build-win32/
