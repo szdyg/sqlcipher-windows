@@ -2,7 +2,7 @@ SQLCipher for Visual Studio
 ===========================
 
 [sqlcipher-windows][] is a simple port of the open-source [SQLCipher][]
-library [src](https://github.com/sqlcipher/sqlcipher) for Visual Studio 2010.
+library [[src](https://github.com/sqlcipher/sqlcipher)] for Visual Studio 2010.
 
 The base source code is copied from [SQLite3][] (amalgamation form). The
 security enhancements provided by SQLCipher are copied directly from its
