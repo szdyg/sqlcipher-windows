@@ -78,24 +78,28 @@
     <TargetName>sqlcipher32-debug</TargetName>
     <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)lib\</OutDir>
+    <IncludePath>$(OpensslDir)x86;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>sqlcipher32</TargetName>
     <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)lib\</OutDir>
+    <IncludePath>$(OpensslDir)x86;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>sqlcipher64-debug</TargetName>
     <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)lib\</OutDir>
+    <IncludePath>$(OpensslDir)x86-64;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>sqlcipher64</TargetName>
     <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
     <OutDir>$(SolutionDir)lib\</OutDir>
+    <IncludePath>$(OpensslDir)x86-64;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
