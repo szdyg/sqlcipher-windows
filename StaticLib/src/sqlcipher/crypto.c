@@ -34,9 +34,9 @@
 #ifdef SQLITE_HAS_CODEC
 
 #include <assert.h>
-#include "sqliteInt.h"
-#include "btreeInt.h"
-#include "crypto.h"
+/*#include "sqliteInt.h"*/ /*** SQLCIPHER MODIFICATION ***/
+/*#include "btreeInt.h"*/  /*** SQLCIPHER MODIFICATION ***/
+/*#include "crypto.h"*/    /*** SQLCIPHER MODIFICATION ***/
 
 /* Generate code to return a string value */
 void codec_vdbe_return_static_string(Parse *pParse, const char *zLabel, const char *value){
