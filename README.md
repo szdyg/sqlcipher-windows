@@ -63,6 +63,6 @@ Versions
   * [SQLite 3.7.13 (amalgamation)](http://www.sqlite.org/sqlite-amalgamation-3071300.zip)
   * [SQLCipher 2.0.6](https://github.com/sqlcipher/sqlcipher/zipball/v2.0.6)
 
- and has been successfully built with the following versions of OpenSSL:
+and has been successfully built with the following versions of OpenSSL:
 
    * [OpenSSL 1.0.1c](http://www.openssl.org/source/openssl-1.0.1c.tar.gz)
