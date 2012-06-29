@@ -19,12 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\shell.c" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\StaticLib\StaticLib.vcxproj">
       <Project>{769bd811-132c-4c29-92b8-73d4ec9dc9be}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\shell.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{739C4E35-5935-48E7-A131-9A0CD4F04925}</ProjectGuid>

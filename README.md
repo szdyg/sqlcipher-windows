@@ -30,8 +30,8 @@ can be found
 Dependencies
 ------------
 
-You will need a build of OpenSSL as a static library for x86 and
-x86-64. Place the OpenSSL libraries in a folder strucured like this:
+You will need a build of [OpenSSL][] as a static library for x86 and
+x86-64. Place the OpenSSL libraries in a folder structured like this:
 
     openssl/
         x86/
@@ -51,3 +51,18 @@ Place the path to your `openssl` folder in a Windows environment variable
 called `OpensslDir`. **Make sure `OpensslDir` contains a trailing backslash.**
 For example, if `C:\Libraries\openssl-1.0.1c` is the path to your OpenSSL
 library folder, then `OpensslDir` must be `C:\Libraries\openssl-1.0.1c\`.
+
+  [OpenSSL]: http://www.openssl.org/
+
+
+Versions
+--------
+
+`sqlcipher-windows` is a combination of
+
+  * [SQLite 3.7.13 (amalgamation)](http://www.sqlite.org/sqlite-amalgamation-3071300.zip)
+  * [SQLCipher 2.0.6](https://github.com/sqlcipher/sqlcipher/zipball/v2.0.6)
+
+ and has been successfully built with the following versions of OpenSSL:
+
+   * [OpenSSL 1.0.1c](http://www.openssl.org/source/openssl-1.0.1c.tar.gz)
