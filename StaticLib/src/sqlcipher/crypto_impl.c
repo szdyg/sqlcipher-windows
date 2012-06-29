@@ -36,9 +36,9 @@
 #include <openssl/rand.h>
 #include <openssl/evp.h>
 #include <openssl/hmac.h>
-#include "sqliteInt.h"
-#include "btreeInt.h"
-#include "crypto.h"
+/*#include "sqliteInt.h"*/ /*** SQLCIPHER MODIFICATION ***/
+/*#include "btreeInt.h"*/  /*** SQLCIPHER MODIFICATION ***/
+/*#include "crypto.h"*/    /*** SQLCIPHER MODIFICATION ***/
 #ifndef OMIT_MEMLOCK
 #if defined(__unix__) || defined(__APPLE__) 
 #include <sys/mman.h>
