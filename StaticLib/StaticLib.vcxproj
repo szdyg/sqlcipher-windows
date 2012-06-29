@@ -77,28 +77,28 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <TargetName>sqlcipher32-debug</TargetName>
     <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)lib\</OutDir>
+    <OutDir>$(SolutionDir)Build-Output\lib\</OutDir>
     <IncludePath>src;$(OpensslDir)x86;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>sqlcipher32</TargetName>
     <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)lib\</OutDir>
+    <OutDir>$(SolutionDir)Build-Output\lib\</OutDir>
     <IncludePath>src;$(OpensslDir)x86;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetName>sqlcipher64-debug</TargetName>
     <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)lib\</OutDir>
+    <OutDir>$(SolutionDir)Build-Output\lib\</OutDir>
     <IncludePath>src;$(OpensslDir)x86-64;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <TargetName>sqlcipher64</TargetName>
     <IntDir>Build-$(Platform)\$(Configuration)\</IntDir>
-    <OutDir>$(SolutionDir)lib\</OutDir>
+    <OutDir>$(SolutionDir)Build-Output\lib\</OutDir>
     <IncludePath>src;$(OpensslDir)x86-64;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -120,6 +120,11 @@
       <AdditionalDependencies>
       </AdditionalDependencies>
     </Lib>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)..\sqlcipher"
+copy "$(ProjectDir)src\sqlite\sqlite3.h" "$(OutDir)..\sqlcipher"
+copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -136,6 +141,11 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)..\sqlcipher"
+copy "$(ProjectDir)src\sqlite\sqlite3.h" "$(OutDir)..\sqlcipher"
+copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -156,6 +166,11 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)..\sqlcipher"
+copy "$(ProjectDir)src\sqlite\sqlite3.h" "$(OutDir)..\sqlcipher"
+copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -176,6 +191,11 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)..\sqlcipher"
+copy "$(ProjectDir)src\sqlite\sqlite3.h" "$(OutDir)..\sqlcipher"
+copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
