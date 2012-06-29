@@ -362,6 +362,5 @@ void sqlite3CodecGetKey(sqlite3* db, int nDb, void **zKey, int *nKey) {
   }
 }
 
-
-/* END CRYPTO */
 #endif
+/* END CRYPTO */
