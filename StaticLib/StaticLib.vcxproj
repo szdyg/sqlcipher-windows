@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\defines.h" />
     <ClInclude Include="src\sqlcipher\crypto.h" />
     <ClInclude Include="src\sqlite\sqlite3.h" />
   </ItemGroup>
@@ -122,8 +121,9 @@
     </Lib>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)..\sqlcipher"
+
 copy "$(ProjectDir)src\sqlite\sqlite3.h" "$(OutDir)..\sqlcipher"
-copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -143,8 +143,9 @@ copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
     </Link>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)..\sqlcipher"
+
 copy "$(ProjectDir)src\sqlite\sqlite3.h" "$(OutDir)..\sqlcipher"
-copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -168,8 +169,9 @@ copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
     </Link>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)..\sqlcipher"
+
 copy "$(ProjectDir)src\sqlite\sqlite3.h" "$(OutDir)..\sqlcipher"
-copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -193,8 +195,9 @@ copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
     </Link>
     <PostBuildEvent>
       <Command>mkdir "$(OutDir)..\sqlcipher"
+
 copy "$(ProjectDir)src\sqlite\sqlite3.h" "$(OutDir)..\sqlcipher"
-copy "$(ProjectDir)src\sqlcipher\crypto.h" "$(OutDir)..\sqlcipher"</Command>
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
