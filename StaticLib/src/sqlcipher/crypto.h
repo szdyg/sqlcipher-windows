@@ -1,3 +1,9 @@
+/*** START REQUIRED BY SQLCIPHER ***/
+#define SQLITE_HAS_CODEC
+#define SQLITE_ENABLE_COLUMN_METADATA
+#define SQLITE_TEMP_STORE 2
+/*** END REQUIRED BY SQLCIPHER ***/
+
 /* 
 ** SQLCipher
 ** crypto.h developed by Stephen Lombardo (Zetetic LLC) 

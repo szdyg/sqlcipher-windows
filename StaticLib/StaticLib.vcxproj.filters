@@ -7,9 +7,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\defines.h">
-      <Filter>Source</Filter>
-    </ClInclude>
     <ClInclude Include="src\sqlite\sqlite3.h">
       <Filter>Source</Filter>
     </ClInclude>
