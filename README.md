@@ -31,7 +31,7 @@ Dependencies
 ------------
 
 You will need a build of [OpenSSL][] as a static library for x86 and
-x86-64 (see [Bulding OpenSSL for Visual Studio][]). Place the OpenSSL libraries
+x86-64 (see [Building OpenSSL for Visual Studio][]). Place the OpenSSL libraries
 in a folder structured like this:
 
     openssl/
