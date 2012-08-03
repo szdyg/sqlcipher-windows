@@ -31,7 +31,8 @@ Dependencies
 ------------
 
 You will need a build of [OpenSSL][] as a static library for x86 and
-x86-64. Place the OpenSSL libraries in a folder structured like this:
+x86-64 (see [Bulding OpenSSL for Visual Studio][]). Place the OpenSSL libraries
+in a folder structured like this:
 
     openssl/
         x86/
@@ -53,6 +54,7 @@ For example, if `C:\Libraries\openssl-1.0.1c` is the path to your OpenSSL
 library folder, then `OpensslDir` must be `C:\Libraries\openssl-1.0.1c\`.
 
   [OpenSSL]: http://www.openssl.org/
+  [Building OpenSSL for Visual Studio]: http://developer.covenanteyes.com/building-openssl-for-visual-studio/
 
 
 Versions
