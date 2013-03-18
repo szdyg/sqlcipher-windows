@@ -62,9 +62,9 @@ Versions
 
 `sqlcipher-windows` is a combination of
 
-  * [SQLite 3.7.13 (amalgamation)](http://www.sqlite.org/sqlite-amalgamation-3071300.zip)
-  * [SQLCipher 2.0.6](https://github.com/sqlcipher/sqlcipher/zipball/v2.0.6)
+  * [SQLite 3.7.15 (amalgamation)](http://www.sqlite.org/sqlite-amalgamation-3071502.zip)
+  * [SQLCipher 2.1.1](https://github.com/sqlcipher/sqlcipher/zipball/v2.1.1)
 
 and has been successfully built with the following versions of OpenSSL:
 
-   * [OpenSSL 1.0.1c](http://www.openssl.org/source/openssl-1.0.1c.tar.gz)
+   * [OpenSSL 1.0.1e](http://www.openssl.org/source/openssl-1.0.1e.tar.gz)
