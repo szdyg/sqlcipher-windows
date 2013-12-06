@@ -6,6 +6,4 @@
 *.suo
 *.user
 ipch/
-/Build-Output/
-Build-win32/
-Build-x64/
+build/
