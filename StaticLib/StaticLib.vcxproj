@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\sqlite3.h" />
+    <ClInclude Include="inc_priv\crypto.h" />
     <ClInclude Include="inc_priv\sqlcipher.h" />
     <ClInclude Include="inc_priv\sqlite3ext.h" />
   </ItemGroup>
@@ -109,6 +110,7 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

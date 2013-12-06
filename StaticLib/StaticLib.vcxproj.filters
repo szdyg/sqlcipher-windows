@@ -19,6 +19,9 @@
     <ClInclude Include="inc_priv\sqlcipher.h">
       <Filter>Internal</Filter>
     </ClInclude>
+    <ClInclude Include="inc_priv\crypto.h">
+      <Filter>Internal</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\sqlite3.c">

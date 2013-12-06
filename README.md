@@ -9,13 +9,12 @@ security enhancements provided by SQLCipher are copied directly from its
 source code. This is trivial since SQLCipher's modifications to SQLite's source
 are denoted by code enclosed in
 
-    /* BEGIN CRYPTO */
+    /* BEGIN SQLCIPHER */
     ...
-    /* END CRYPTO */
+    /* END SQLCIPHER */
 
-sqlcipher-windows adds a few minor code modifications to allow SQLCipher's
-code to build with the SQLite amalgamation source distribution and to quell
-some warnings.
+*sqlcipher-windows* adds a few minor code modifications to allow SQLCipher's
+code to build with the SQLite amalgamation source distribution.
 
 This project was mostly informed by the generous video by Mike Stephenson which
 can be found
@@ -49,9 +48,9 @@ folder structured like this:
                 [openssl headers]
 
 Place the path to your `openssl` folder in a Windows environment variable
-called `OpenSslDir`. For example, if `C:\Libraries\openssl-1.0.1c` is the path
+called `OpenSslDir`. For example, if `C:\Libraries\openssl-1.0.1e` is the path
 to your OpenSSL library folder, then `OpenSslDir` must be
-`C:\Libraries\openssl-1.0.1c`.
+`C:\Libraries\openssl-1.0.1e`.
 
   [OpenSSL]: http://www.openssl.org/
   [Building OpenSSL for Visual Studio]: http://developer.covenanteyes.com/building-openssl-for-visual-studio/
@@ -63,7 +62,7 @@ Versions
 `sqlcipher-windows` is a combination of
 
   * [SQLite 3.8.0.2 (amalgamation)](http://sourceforge.net/projects/sqlite.mirror/files/SQLite%203.8.0.2/)
-  * [SQLCipher 3.0.0](https://github.com/sqlcipher/sqlcipher/zipball/v3.0.0)
+  * [SQLCipher 3.0.1](https://github.com/sqlcipher/sqlcipher/zipball/v3.0.0)
 
 and has been successfully built with the following versions of OpenSSL:
 
